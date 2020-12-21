@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Black';
+    src: url(/WorkThings/fonts/HelveticaNeueCyr-Black.ttf);
+}
+@font-face {
+    font-family: 'Bold';
+    src: url(/WorkThings/fonts/HelveticaNeueCyr-Bold.ttf);
+}
+@font-face {
+    font-family: 'Italic';
+    src: url(/WorkThings/fonts/HelveticaNeueCyr-Italic.ttf);
+}
+@font-face {
+    font-family: 'Light';
+    src: url(/WorkThings/fonts/HelveticaNeueCyr-Light.ttf);
+}
+@font-face {
+    font-family: 'Roman';
+    src: url(/WorkThings/fonts/HelveticaNeueCyr-Roman.ttf);
+}
+@font-face {
+    font-family: 'Thin';
+    src: url(/WorkThings/fonts/HelveticaNeueCyr-Thin.ttf);
+}
+@font-face {
+    font-family: 'UltraLight';
+    src: url(/WorkThings/fonts/HelveticaNeueCyr-UltraLight.ttf);
+}

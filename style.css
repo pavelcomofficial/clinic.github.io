@@ -1,0 +1,242 @@
+@import 'fonts.css';
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    width: 200px;
+}
+.logo_text {
+    font-family: 'Thin';
+    margin-left: 25px;
+    font-size: 11px;
+    color: #898989;
+}
+.menu-bar {
+    
+    margin-top: 65px;
+    color: #363636;
+}
+.menu__my {
+    margin-left: 20px;
+}
+.menu__my a {
+    font-family: 'Thin';
+    font-size: 14px;
+    color: #363636;
+}
+.info {
+    font-family: 'Roman';
+    font-size: 14px;
+    text-align: right;
+}
+.number {
+    font-family: 'Thin';
+    font-size: 18px;
+    margin-top: -5px;
+    text-align: right;
+    
+}
+/* Меню*/
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+    position: absolute;
+    display:inherit;
+    z-index: 10000;
+    color: white;
+    text-decoration: none;
+    
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+    font-family: 'Thin';
+    font-size: 14px;
+    min-width:170px;
+    padding: 3px;
+    float:none;
+    display:list-item;
+    position: relative;
+    background-color: #daebd2;
+    text-decoration: none;
+    border: none;
+}
+nav ul ul ul {
+    font-family: 'Thin';
+    font-size: 12px;
+    position: absolute;
+    padding: 3px;
+    top:0;
+    left:100%;
+    
+}
+nav a {
+    padding: 3px;
+    display:block;
+    padding:0 0px;
+    color:#FFF;
+    text-decoration: none;
+    
+}
+nav a:hover {
+    
+    text-decoration: none;
+    background-color: white;
+    border-bottom: 3px solid #78b660;
+}
+/* Индикатор*/
+li > a:after { content:  ' >'; }
+		li > a:only-child:after { content: ''; }
+/* Слайдер*/
+.heading {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 300px;
+    margin-bottom: 30px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    float: right;
+    height: 370px;
+    margin-right: 40px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: black;
+    font-family: 'Thin';
+    font-size: 23px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+.slideText p {
+    margin-bottom: -3px;
+}
+.slider_text {
+    font-family: 'Bold';
+    font-size: 30px;
+}
+.proc {
+    text-align: center;
+    margin-left: 50px;
+    margin-top: -35px;
+    font-family: 'Bold';
+    font-size: 52px;
+    color: #78b660;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: left;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #78b660;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* О нас*/
+.hello_text {
+    font-family: 'Thin';
+    font-size: 30px;
+    color: #363636;
+    text-align: center;
+    margin-top: 50px;
+}
+.about_text {
+    font-family: 'Thin';
+    font-size: 14px;
+    color: #363636;
+    text-align: center;
+    margin-bottom: -1px;
+}
+.heading {
+    margin: 0;
+    height: 100%;
+    background: url(/img/Flower.png);
+    background-size: right;
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+}
+@media csreen and (max-width: 375px) {
+    
+    
+}

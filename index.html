@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devise-width, initial-scala=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Simplashop</title>
+</head>
+
+<body>
+    <header class="menu-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 ml-auto align-self-center">
+                    <img src="img/Logo.png" alt="Logo" class="logo">
+                    <p class="logo_text">клиника медицинской косметологии</p>
+                </div>
+                <div class="col-xl-6 align-self-center">
+                    <nav>
+                        <ul class="menu d-flex">
+                            <li class="menu__my"><a href="#">О клинике</a></li>
+                            <li class="menu__my"><a href="#">Что мы лечим</a></li>
+                            <li class="menu__my"><a href="#">Услуги</a>
+                                <ul>
+                                    <li><a href="#">Дерматология</a></li>
+                                    <li><a href="#">Дерматоонкология</a>
+                                        <ul>
+                                            <li><a href="#">Гемангиома лечение</a></li>
+                                            <li><a href="#">Лечение базалиом</a></li>
+                                            <li><a href="#">Диагностика меланом</a></li>
+                                            <li><a href="#">Лечение ксантелазм (ксантом)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Медицинская косметология</a></li>
+                                    <li><a href="#">Венерология </a></li>
+                                    <li><a href="#">Трихология</a></li>
+                                    <li><a href="#">Онихология</a></li>
+                                    <li><a href="#">Урология</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__my"><a href="#">Цены на услуги</a></li>
+                            <li class="menu__my"><a href="#">Доктора</a></li>
+                            <li class="menu__my"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-2 align-self-center">
+                    <h6 class="info">Свяжитесь с нами:</h6>
+                    <p class="number">+380 67 580 05 37</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="heading">
+        <div class="container">
+            <div class="slider">
+                <div class="item">
+                    <img src="img/Girl.png" alt="Первый слайд">
+                    <div class="slideText">
+                        <div class="slider_pic">
+                            <h5 class="slider_text">Удаление папилом</h5>
+                            <p>оплати единоразово 7 процедур —</p>
+                            <p>получи скидку<h4 class="proc">50%</h4>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/Girl.png" alt="Второй слайд" class="girl">
+                    <div class="slideText">
+                        <div class="slider_pic">
+                            <h5 class="slider_text">Какойто текст</h5>
+                            <p>оплати единоразово 7 процедур —</p>
+                            <p>получи скидку<h4 class="proc">50%</h4>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/Girl.png" alt="Третий слайд">
+                    <div class="slideText">
+                        <div class="slider_pic">
+                            <h5 class="slider_text">Удаление папилом</h5>
+                            <p>оплати единоразово 7 процедур —</p>
+                            <p>получи скидку<h4 class="proc">50%</h4>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="slider-dots">
+                <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            </div>
+
+
+            <div class="row>">
+                <div class="col-xl-12">
+                    <p class="hello_text">Здравствуйте, ищите профессиональный подход?</p>
+                </div>
+                <div class="col-xl-12 align-self-center">
+                    <p class="about_text">Если вам 20-30-40-50-60-70 и вы ищите ответы на вопросы, как прекрасно
+                        выглядеть и уверенно себя чувствовать — значит вы попали по адресу!</p>
+                    <p class="about_text">Вы на сайте центра медицинской косметологии , который готов стать вашим
+                        проводником в мире эстетической медицины.</p>
+                    <p class="about_text">В рамках этого сайта можно найти интересные статьи, описание популярных
+                        медико-эстетических процедур, показания и противопоказания к ним, их обсуждение среди</p>
+                    <p class="about_text">пользователей; получить профессиональный совет или ответ на ваш вопрос.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="slider.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
